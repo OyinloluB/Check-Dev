@@ -68,7 +68,7 @@ body {
   position: relative;
 }
 .about-content {
-  width: 75%;
+  /* width: 75%; */
   margin-left: 14%;
 }
 .nav {
@@ -288,6 +288,7 @@ body {
   height: 3px;
   background-color: rgb(247, 113, 23);
   width: 100%;
+  /* position: absolute; */
 }
 .menu-content-ingredients {
   margin-top: 3%;
@@ -328,7 +329,7 @@ span {
 /* BANNER */
 
 #banner {
-  height: 70vh;
+  min-height: 70vh;
   z-index: 1;
   position: relative;
   background-color: rgb(247, 229, 232);
@@ -344,9 +345,12 @@ span {
 }
 .banner h2,
 .banner h3 {
+  /* align-items: center; */
   position: relative;
   /* z-index: 1; */
   top: 200px;
+  /* display: flex; */
+  /* justify-content: center; */
   text-align: center;
 }
 .banner h2 {
@@ -445,4 +449,142 @@ span {
   top: -25%;
   position: absolute;
   background-color: rgb(247, 113, 23);
+}
+
+/* MEDIA QUERIES */
+
+
+@media screen and (max-width: 420px){
+  .intro-container {
+    left: 27px;
+    width: 300px;
+    height: 300px;
+  }
+  .intro-container-2 {
+    left: 45px;
+    width: 260px;
+    height: 260px;
+  }
+  .intro-content {
+    left: 60px;
+    width: 210px;
+    height: 210px;
+  }
+  .intro-text {
+    left: 28px;
+  }
+  .nav {
+    display: none;
+  }
+  #about {
+    flex-direction: column;
+    min-height: 120vh;
+  }
+  .about-content {
+    margin: 0;
+    height: 50vh;
+    padding-left: 5%;
+  }
+  .about-header-text {
+    font-size: 14px;
+  }
+  .statements {
+    flex-direction: column;
+  }
+  .vision,
+  .mission {
+    margin: 0;
+    margin-bottom: 3vh;
+  }
+  .fruitImg {
+    width: 150px;
+    top: -23.5vh;
+  }
+  .fruit-tray {
+    max-height: 20vh;
+  }
+  .food-tray {
+    width: 300px;
+    height: 30vh;
+    margin-top: -10vh;
+  }
+  .download-cta {
+    margin-top:-10vh;
+    margin-left: -10vh;
+    width: 220px;
+    height: 200px;
+  }
+  .other-publications button {
+    left: 20%;
+    top: 10vh;
+  }
+  .menuImage {
+    display: none;
+  }
+  .menu-list {
+    display: none;
+  }
+  .menu-container {
+    flex-direction: column;
+  }
+  .menu-content {
+     left: 0;
+     width: 300px;
+  }
+  .bannerImage {
+    width: 350px;
+    height: 50vh;
+    margin-top: -35vh;
+  }
+  .banner h2,
+  .banner h3 {
+    width: 200px;
+    top: 80px;
+    text-transform: capitalize;
+    padding-left: 2%;
+    text-align: left;
+    /* font-size: 24px; */
+  }
+  .banner h2 {
+    font-size: 22px;
+  }
+  #footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer-content {
+    flex-direction: column;
+  }
+  .contact {
+    margin: 0;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  .social-icons {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  .message h5 {
+    margin: 0;
+    text-align: center;
+  }
+  .logo {
+    margin: 0;
+  }
+  .logo-image {
+    height: 30vh;
+    width: 30vh;
+  }
+  .menu-content-line {
+    width: 300px;
+  }
+  .logo-image h2 {
+    top: 40%;
+    left: 31%;
+  }
+  .message h5::after {
+    display: none;
+  }
 }
