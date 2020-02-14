@@ -478,7 +478,7 @@ span {
   }
   #about {
     flex-direction: column;
-    min-height: 140vh;
+    min-height: 120vh;
   }
   .about-content {
     margin: 0;
@@ -517,12 +517,7 @@ span {
   .other-publications button {
     left: 20%;
     top: 10vh;
-  }
-  #menu {
-    height: 100vh;
-  }
-  #publications {
-    height: 80vh;
+    margin-right: 15px;
   }
   .menuImage {
     display: none;
@@ -532,7 +527,6 @@ span {
   }
   .menu-container {
     flex-direction: column;
-    /* height: 100vh; */
   }
   .menu-content {
      left: 0;
