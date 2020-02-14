@@ -69,7 +69,7 @@ body {
 }
 .about-content {
   width: 75%;
-  margin-left: 16.5%;
+  margin-left: 14%;
 }
 .nav {
   display: flex;
@@ -80,7 +80,7 @@ body {
   list-style: none;
   height: 20px;
   padding: 15px;
-  width: 175px;
+  width: 155px;
   margin-right: 1.5px;
   font-size: 16px;
   text-align: center;
@@ -110,12 +110,13 @@ body {
   margin-top: 16%;
 }
 .about-intro {
-  font-size: 18px;
+  font-size: 14px;
   color: rgb(252, 121, 121);
   padding-right: 17%;
 }
 .about-header {
   margin-top: 3%;
+  font-size: 16px;
 }
 .about-header-text {
   text-transform: uppercase;
@@ -135,6 +136,11 @@ body {
   text-transform: uppercase;
   font-weight: bold;
   margin-bottom: 2%;
+  font-size: 16px;
+}
+.vision p,
+.mission p {
+  font-size: 14px;
 }
 
 /* PUBLICATIONS */
